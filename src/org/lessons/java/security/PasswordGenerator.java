@@ -35,7 +35,7 @@ public class PasswordGenerator {
 		 
 		 //generate password
 		 
-		 String password = name + '-' + surname + '-' + favoriteColor + '-' + birthDateSum;
+		 String password = name.trim() + '-' + surname.trim() + '-' + favoriteColor.trim() + '-' + birthDateSum;
 		 System.out.println(password);
 		
 		
