@@ -17,7 +17,7 @@ public class PasswordGenerator {
 		String surname = sc.nextLine();
 		
 		//ask the favorite color
-		System.out.println("Your name is: ");
+		System.out.println("Your favorite color is: ");
 		String favoriteColor = sc.nextLine(); 
 		
 		//ask the birth day 
@@ -29,6 +29,14 @@ public class PasswordGenerator {
 		 
 		 System.out.println("Your birth day is: ");
 		 birthDate[0] = sc.nextInt(); 
+		 
+		 //sum the date
+		 int birthDateSum = birthDate[0] + birthDate[1] + birthDate[2];
+		 
+		 //generate password
+		 
+		 String password = name + '-' + surname + '-' + favoriteColor + '-' + birthDateSum;
+		 System.out.println(password);
 		
 		
 	}
